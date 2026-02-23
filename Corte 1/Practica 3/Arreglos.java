@@ -38,8 +38,9 @@ public class Arreglos {
         objeto.registrarDatos();            // Llama a la funcion de escribir
         objeto.mostrar("Resultado Final");  // Llama a la funcion de extraer
     }
-} // Esta llave cierra la clase (la mas importante)
+} 
    
     
     
+
 
