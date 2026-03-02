@@ -1,5 +1,3 @@
-
-
 package arreglos;
 import java.util.Scanner; // Herramienta para leer teclado
 public class Arreglos {
@@ -66,7 +64,7 @@ public class Arreglos {
     }
     
     public static void main(String[] args) {
-              Arreglos obj = new Arreglos(5); // Crea el objeto
+              Arreglos obj = new Arreglos(8); // Crea el objeto
         obj.registrarDatos();            // Llama a la funcion de escribir
         obj.mostrar("Resultado Final");  // Llama a la funcion de extraer
     
@@ -76,3 +74,4 @@ public class Arreglos {
         System.out.println("El valor minimo que contiene el vector es: " + obj.min());
     }
 } 
+
