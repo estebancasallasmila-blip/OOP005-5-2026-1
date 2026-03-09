@@ -20,8 +20,8 @@ public class Matriz2X2 {
         columnas = 2;
         data = new int [filas][columnas];
     }
-    
-    public void set(){
+    //cargar
+    public void setMatriz(){
         Scanner sc = new Scanner(System.in);
         
         for(int i=0;i < filas; i++){
@@ -31,8 +31,8 @@ public class Matriz2X2 {
             }
         }
     }
-    
-    public void get(){
+    //matriz
+    public void getMatriz(){
         System.out.println("\n Matriz 2x2:");
          for(int i=0;i < filas; i++){
             for(int j=0;j< columnas;j++){
@@ -49,8 +49,9 @@ public class Matriz2X2 {
     public static void main(String[] args) {
         
         Matriz2X2 m = new Matriz2X2();
-        m.set();
-        m.get();
+        m.setMatriz();
+        m.getMatriz();
     }
     
 }
+
