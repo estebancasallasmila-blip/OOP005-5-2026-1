@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+//arreglo tiene tamaño fijo y dependen de 
 package matriz2x2; // get y set
 
 import java.util.Scanner;
@@ -20,7 +17,7 @@ public class Matriz2X2 {
         columnas = 2;
         data = new int [filas][columnas];
     }
-    //cargar
+    
     public void setMatriz(){
         Scanner sc = new Scanner(System.in);
         
@@ -31,7 +28,7 @@ public class Matriz2X2 {
             }
         }
     }
-    //matriz
+    
     public void getMatriz(){
         System.out.println("\n Matriz 2x2:");
          for(int i=0;i < filas; i++){
@@ -41,17 +38,49 @@ public class Matriz2X2 {
             System.out.println();
         }
     }
-    
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-        Matriz2X2 m = new Matriz2X2();
-        m.setMatriz();
-        m.getMatriz();
+   
+    public Matriz2X2 sumar(Matriz2X2 otra) {
+    Matriz2X2 resultado = new Matriz2X2();
+    for (int i = 0; i < filas; i++) {
+        for (int j = 0; j < columnas; j++) {
+            resultado.data[i][j] = this.data[i][j] + otra.data[i][j];
+        }
     }
-    
+    return resultado;
 }
+        
+        
+public Matriz2X2 mult (Matriz2X2 m) {
+    Matriz2X2 resultado = new Matriz2X2 ();
+        for (int i = 0; i < filas ; i ++) {
+            for (int j = 0; j < columnas ; j ++) {
+            resultado.data[i][j]= this . data [i][0] * m.data [0][j] 
+                                + this . data [i][1] * m.data [1][j];
+        }
+    }
 
+ return resultado ;
+ }
+    
+    //sumar matrizes
+  public static void main(String[] args) {
+    Matriz2X2 m1 = new Matriz2X2();
+    Matriz2X2 m2 = new Matriz2X2();
+
+    System.out.println("LLENAR MATRIZ 1:");
+    m1.setMatriz();
+    
+    System.out.println("LLENAR MATRIZ 2:");
+    m2.setMatriz();
+
+    // Operación de Suma
+    Matriz2X2 resultadoSuma = m1.sumar(m2);
+    System.out.println("\nLA SUMA ES:");
+    resultadoSuma.getMatriz();
+
+    // Operación de Multiplicación
+    Matriz2X2 resultadoMult = m1.mult(m2);
+    System.out.println("\nLA MULTIPLICACIÓN ES:");
+    resultadoMult.getMatriz();
+}  
+}
