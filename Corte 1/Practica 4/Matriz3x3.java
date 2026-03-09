@@ -20,7 +20,7 @@ public class Matriz3x3 {
         data = new int [filas][columnas];
     }
     
-    public void set(){
+    public void setMatriz(){
         Scanner sc = new Scanner(System.in);
         
         for(int i=0;i < filas; i++){
@@ -31,7 +31,7 @@ public class Matriz3x3 {
         }
     }
     
-    public void get(){
+    public void getMatriz(){
         System.out.println("\n Matriz 2x2:");
          for(int i=0;i < filas; i++){
             for(int j=0;j< columnas;j++){
@@ -50,3 +50,4 @@ public class Matriz3x3 {
     }
     
 }
+
