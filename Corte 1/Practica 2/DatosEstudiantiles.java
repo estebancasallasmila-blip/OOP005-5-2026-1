@@ -1,5 +1,5 @@
 package datosestudiantiles;
-
+//ACTIVIDAD REALIZADA SEGUN LA GUIA
 /**
  *
  * @author esteb
@@ -12,7 +12,7 @@ package datosestudiantiles;
         
         Scanner sc = new Scanner(System.in);
 
-        // 1. Pedir ciudad, semestre y promedio
+        // PEDIR DATOS USANDO Scanner
         System.out.print("Ingrese su ciudad: ");
         String ciudad = sc.nextLine();
 
@@ -22,7 +22,7 @@ package datosestudiantiles;
         System.out.print("Ingrese su promedio: ");
         double promedio = sc.nextDouble();
 
-        // 2. Imprimir todos los datos con etiquetas claras
+        //IMPRIMIR DATOS
         System.out.println("\n--- Resumen Academico ---");
         System.out.println("Ciudad de residencia: " + ciudad);
         System.out.println("Semestre actual: " + semestre );
