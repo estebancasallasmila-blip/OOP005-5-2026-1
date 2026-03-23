@@ -1,5 +1,5 @@
 package calculator;
-
+//Calculadora relizada en la sala
 public class Calculator {
     public int x1, x2; 
 
@@ -7,27 +7,25 @@ public class Calculator {
         x1 = a;
         x2 = b;
     }
-
+//METODO SUMA
     public int add() {
         return x1 + x2;
     }
-
+//METODO RESTA
     public int subs() {
         return x1 - x2;
     }
-
-    // Nuevo método: Multiplicación
+//METODO MULTIPLICACION
     public int mult() {
         return x1 * x2;
     }
-
-    // Nuevo método: División con control de cero
+//METODO DIVISION, con restriccion "x2 != 0"
     public double div() {
         if (x2 == 0) {
             System.out.println("Error: No se puede dividir por cero.");
             return 0; 
         }
-        // Usamos (double) para que el resultado tenga decimales
+   //USO DE DOUBLE PARA  LOS DECIMALES
         return (double) x1 / x2;
     }
 
