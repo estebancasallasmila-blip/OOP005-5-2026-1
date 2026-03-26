@@ -1,4 +1,4 @@
-
+//ACTIVIDAD REALIZADA SEGÚN LA GUÍA PARA DESAROLLAR LOS TEMAS DE (clases, atributos y objetos)
 package Clases;
 
 public class Libro {
