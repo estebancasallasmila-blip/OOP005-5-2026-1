@@ -1,3 +1,4 @@
+//PRACTICA CORRESPONDIENTE A LA SUMA Y MULTIPLICACION DE MATRICEZ 2X2
 //arreglo tiene tamaño fijo y dependen de 
 package matriz2x2; // get y set
 
