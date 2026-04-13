@@ -9,9 +9,9 @@ import java.util.Scanner;
  */
 public class Matriz2x2 {
     
-   public int [][]data;
-    public int filas;
-    public int columnas;
+   private int [][]data;
+    private int filas;
+    private int columnas;
     
     public Matriz2x2(){
         filas = 2;
