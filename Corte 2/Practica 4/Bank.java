@@ -7,6 +7,7 @@ public class Bank {
     private Cuenta accountThree;
     private Cuenta accountFour;
     private Cuenta accountFive;
+    private Cuenta accountSix;
 
     public Bank() {
         accountOne = new Cuenta("Zeus", 100, "1");
@@ -15,6 +16,7 @@ public class Bank {
         accountThree = new Cuenta("Poseidon", 300, "3");
         accountFour = new Cuenta("Athena", 400, "4");
         accountFive = new Cuenta("Ares", 500, "5");
+        accountSix = new Cuenta("Apolo", 900, "6");
     }
 
     public static void main(String[] args) {
@@ -25,5 +27,6 @@ public class Bank {
         System.out.println("Balance de Poseidon: " + banckOfGods.accountThree.getBalance());
         System.out.println("Balance de Athena: " + banckOfGods.accountFour.getBalance());
         System.out.println("Balance de Ares: " + banckOfGods.accountFive.getBalance());
+        System.out.println("Balance de Arpolo: " + banckOfGods.accountSix.getBalance());
     }
 }
